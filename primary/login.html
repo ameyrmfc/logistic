@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from primary/login.asp by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 18:37:07 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>iBall Baton Wireless-N Broadband Router</title>
+<link rel='icon' href='img/favrite-icon.png' type='image/x-ico'/>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/login.css">
+<!--[if lt IE 9]>
+<script src="js/libs/html5shiv.min.js"></script>
+<script src="js/libs/respond.min.js"></script>
+  <![endif]-->
+<script src="lang/b28n.js"></script>
+<script src="js/libs/j.js"></script>
+
+</head>
+<body>
+<header class="fadeInDown">
+  <div class="container-fluid"> 
+  	<img src="img/logo.png" alt="logo" class="logo"> 
+    <img src="img/slogan.png" alt="slogan" class="slogan-img pull-right hidden-xs"> 
+  </div>
+</header>
+
+<article class=" center-block" style="float:none">
+  <h2 class="signin-heading">Login</h2>
+  <p id="msg" class="text-danger">&nbsp;</p>
+  <div class="form">
+  <div class="form-group ico-groups country none" id="loginLangWrap">
+    <label class="sr-only">Language</label>
+    <label class="ico ico-lang"></label>
+    <div id="country" name="country" class="form-control ico-text" data-val="en">
+      <div class="dropdown">
+        <div class="addLang"><span class="lang">English</span><span class="caret"></span>
+        </div>
+        <ul class="dropdown-menu">
+            <li data-val="cn">简体中文</li>
+            <li data-val="en">English</li>
+          </ul>
+      </div>
+      </div>
+    </div>
+    <p id="admin"><strong >Default:</strong>&nbsp;admin</p>
+    <div class="form-group ">
+      <label  for="password" ><strong>Password:</strong></label>
+      <input type="password" id="password" class="ico-text"  required autocomplete="off">
+    </div>
+    <button class="btn btn-primary" id="submit">OK</button>
+    <button  class="btn btn-primary" id="cancel">Cancel</button>
+  </div>
+</article>
+
+<footer class="navbar-fixed-bottom"></footer>
+<script>
+  var lang = "en";
+  $('#country').val(lang || B.getLang());
+  B.setTextDomain(['com'], lang);
+</script>
+<script src="js/login.js"></script>
+<script src="js/libs/MTCvalidatebox.js"></script> 
+</body>
+
+<!-- Mirrored from primary/login.asp by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 18:37:16 GMT -->
+</html>
